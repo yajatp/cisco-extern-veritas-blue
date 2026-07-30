@@ -1,81 +1,114 @@
 # Veritas Blue — Project Glass Ocean
 ### Cisco High School Externship Capstone Pitch (Austin Cohort)
 
-[![Live Demo](https://img.shields.io/badge/Vercel-Live_Demo-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://cisco-extern-veritas-blue.vercel.app)
+[![Live Presentation](https://img.shields.io/badge/Vercel-Live_Presentation-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://cisco-extern-veritas-blue.vercel.app)
 [![Cisco Externship](https://img.shields.io/badge/Cisco-Externship_2026-049FD9?style=for-the-badge&logo=cisco&logoColor=white)](https://cisco-extern-veritas-blue.vercel.app)
 
 ---
 
 ## 🌊 Overview & Context
 
-**Veritas Blue** (by team *Bat Bridge Partners*, Austin Cohort) is a Cisco consulting proposal and interactive 3D pitch deck built for **The Metals Company (TMC)** — a deep-sea mining firm harvesting battery-metal nodules from the Pacific seafloor at 4,000m depth.
+**Veritas Blue** (developed by **Bat Bridge Partners**, Austin Cohort) is an interactive 3D presentation deck and Cisco consulting proposal built for **The Metals Company (TMC)** — a public deep-sea mining firm harvesting battery-metal nodules from the Pacific seafloor at 4,000 meters depth.
 
-TMC faces a massive **proof and trust problem**: environmental groups, regulators, and investors publicly distrust their ecological impact claims. Our core thesis makes security and immutable proof the product: **verified truth is what makes deep-sea mining licensable, insurable, and fundable.**
+TMC faces a critical **proof and trust deficit**: environmental groups, regulators, and investors publicly distrust their ecological impact claims. Our proposal turns security into the core product: **verified environmental truth makes deep-sea mining licensable, insurable, and fundable.**
 
 > *"Give the machines eyes. Give the ocean a voice. Lock both behind doors nobody can pick."*
+
+---
+
+## 👥 Team & Mentors
+
+- **Program:** Cisco High School Externship (Austin Cohort)
+- **Team:** Bat Bridge Partners (6 Members)
+- **Cisco Mentors:** Cecelia Croman & Demetrius Christian
+- **Team Contributions:** All members actively contributed across research, technical architecture, 3D simulation design, and pitch presentation delivery.
 
 ---
 
 ## 🚀 Key Solution Pillars
 
 1. **Glass Ocean (Tamper-Proof Environmental Monitoring)**
-   - Sensor telemetry hash-chained & signed into **Splunk** at capture over a one-way hardware network.
-   - **Cisco Tech:** Splunk, Catalyst Industrial Ethernet, ThousandEyes, Webex.
+   - Sensor data is signed and hash-chained directly into **Splunk** over a one-way physical network architecture.
+   - **Cisco Products:** Splunk, Catalyst Industrial Ethernet, ThousandEyes, Webex.
 
-2. **AI Selective Harvesting**
-   - Real-time computer vision retrofit on collector vehicles: auto-detect & skip marine life (epifauna), auto-throttle sediment plumes, and sign every decision onto an immutable ledger.
-   - **Cisco Tech:** UCS AI POD, CURWB (Ultra-Reliable Wireless Backhaul), Catalyst IE.
+2. **AI Selective Harvesting (Mining in the Dark)**
+   - Real-time computer-vision retrofit on collector vehicles: automatically detects and skips epifauna (marine life), auto-throttles when sediment plumes spike, and logs signed decisions into an immutable ledger.
+   - **Cisco Products:** UCS AI POD, CURWB (Ultra-Reliable Wireless Backhaul), Catalyst IE.
 
-3. **Zero Trust Architecture**
-   - Hardened floating industrial plant security against ransomware, AIS spoofing, and data poisoning.
-   - **Cisco Tech:** Duo, ISE (Microsegmentation), Cyber Vision (OT Monitoring), Umbrella, Secure Access (ZTNA), XDR, Splunk.
-
----
-
-## 👥 Team & Contributions
-
-- **Program:** Cisco Externship (Austin Cohort)
-- **Team Name:** Bat Bridge Partners (6 Members)
-- **Technical Coach:** Demetrius
-- **Team Collaboration:** All team members collaborated on research, slide design, technical architecture, and pitch presentation across the 3 core problem/solution pairs.
+3. **Zero Trust Architecture (Cyber & Operational Security)**
+   - Microsegmentation and defense against ransomware, data poisoning, and vessel spoofing.
+   - **Cisco Products:** Duo, ISE (Segmentation), Cyber Vision (OT), Umbrella, Secure Access (ZTNA), XDR, Splunk.
 
 ---
 
-## 💻 Tech Stack & Features
+## 💻 Tech Stack & Architecture
 
-- **Frontend & 3D Engine:** Vite, Vanilla JavaScript, Three.js (WebGL 3D Simulations)
-- **Styling:** Custom CSS with Glassmorphism & Bioluminescent Ocean Palette
-- **Interactive Pitch Deck:** Seamless transitions where slides "sink" into full-screen 3D ocean simulations (Glass Bridge, Interactive Nodule Harvester, Zero Trust Threat Metaphor).
-- **Deployment:** Live on Vercel at [https://cisco-extern-veritas-blue.vercel.app](https://cisco-extern-veritas-blue.vercel.app)
-
----
-
-## ⌨️ Controls & Standalone Demos
-
-### Keyboard Navigation
-- **`→` / `Space` / `PageDown`**: Advance slides & simulation beats
-- **`←` / `PageUp`**: Go back
-- **`S`**: **Escape Hatch** — instantly skip any simulation beat
-- **`R`**: Restart the interactive robot harvesting demo
-- **`Mouse Click / Enter`**: Collect green nodules (in Robot Sim)
-- **`Hold W`**: Boost thrusters (spikes plume meter to trigger Auto-Throttle)
-
-### Direct Demo Routes
-- **Interactive Robot Harvester:** [`/#/robot`](https://cisco-extern-veritas-blue.vercel.app/#/robot)
-- **Glass Bridge Simulation:** [`/#/bridge`](https://cisco-extern-veritas-blue.vercel.app/#/bridge)
-- **Zero Trust Threat Visualizer:** [`/#/sharks`](https://cisco-extern-veritas-blue.vercel.app/#/sharks)
+- **Build System & Runtime:** Vite + Vanilla JavaScript (ES Modules)
+- **3D Graphics & Stage Engine:** Three.js + WebGL rendering engine driving an ambient deep-sea environment with procedural marine snow, caustics, and bubble particle bursts (`stage.js`, `bubbles.js`).
+- **Deck Engine:** Custom 21-cue presentation sequencer (`deck.js`, `sequence.js`, `slides.js`) with fluid slide-sink and surface transitions.
+- **Embedded Interactive Demos:** Three full-screen, pre-warmed HTML5/WebGL simulation scenes:
+  - **Demo 1 (`demo-1.dc.html`):** Glass Ocean Live Telemetry Dashboard & Tamper Detection.
+  - **Demo 2 (`demo-2.dc.html`):** Robot Cam Selective Nodule Harvesting Interactive Simulation.
+  - **Demo 3 (`demo-3.dc.html`):** Shark Attack Zero Trust Threat Metaphor 3D Scene.
+- **Styling:** Custom glassmorphism UI with bioluminescent cyan/teal accents.
 
 ---
 
-## ⚙️ Running Locally
+## ⌨️ Controls & Navigation
+
+### Presentation Keys
+| Key | Action |
+| --- | --- |
+| `→` / `Space` / `PageDown` / `Click` | Advance to next slide or next simulation beat |
+| `←` / `PageUp` | Step back to previous slide or beat |
+| `S` / `s` | **Escape Hatch** — instantly bail out of any live demo to the next slide |
+| `Home` / `↑` | Jump to Title slide (Cue 1) |
+| `End` / `↓` | Jump to Thank You slide (Cue 21) |
+| `1`, `2`, `3` | Jump directly to Demo 1, Demo 2, or Demo 3 |
+| `⛶` Button | Toggle full-screen mode |
+
+---
+
+## 🎯 Show Sequence (21 Cues)
+
+1. **Title** (`page-01`)
+2. **Team** (`page-02`)
+3. **Client** (`page-03`)
+4. **Roadmap** (`page-04`)
+5. **Implementation & Risk** (`page-05`)
+6. **Glass Ocean — Our Problem** (`page-06`)
+7. **Glass Ocean — Our Solution** (`page-07`)
+8. **Glass Ocean — Cisco Tech** (`page-08`)
+9. **SINK → Demo 1: Glass Ocean Live Dashboard**
+10. **Mining in the Dark — Our Problem** (`page-10`)
+11. **Mining in the Dark — Our Solution** (`page-11`)
+12. **Mining in the Dark — Cisco Tech** (`page-12`)
+13. **Mining in the Dark — Where Cisco Starts** (`page-13`)
+14. **SINK → Demo 2: Robot Cam Selective Harvesting**
+15. **Zero Trust — Our Problem** (`page-15`)
+16. **Zero Trust — Our Solution** (`page-16`)
+17. **Zero Trust — Cisco Tech** (`page-17`)
+18. **SINK → Demo 3: Shark Attack Live Threat View**
+19. **Scalability** (`page-19`)
+20. **The Deciding Metric — Ocean Trust Index** (`page-20`)
+21. **Thank You** (`page-21`)
+
+---
+
+## ⚙️ Development & Deployment
 
 ```bash
-# Navigate to application directory
+# Navigate to the web app directory
 cd glass-ocean
 
 # Install dependencies
 npm install
 
-# Start local development server
+# Launch development server
 npm run dev
+
+# Build for production
+npm run build
 ```
+
+Deployed live at [https://cisco-extern-veritas-blue.vercel.app](https://cisco-extern-veritas-blue.vercel.app).
