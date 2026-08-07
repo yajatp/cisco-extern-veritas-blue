@@ -1,7 +1,6 @@
 # Veritas Blue — Project Glass Ocean
 ### Cisco High School Externship Capstone Pitch (Austin Cohort)
 
-[![Live Presentation](https://img.shields.io/badge/Vercel-Live_Presentation-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://cisco-extern-veritas-blue.vercel.app)
 [![Cisco Externship](https://img.shields.io/badge/Cisco-Externship_2026-049FD9?style=for-the-badge&logo=cisco&logoColor=white)](https://cisco-extern-veritas-blue.vercel.app)
 
 ---
