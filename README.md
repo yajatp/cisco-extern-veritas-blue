@@ -5,7 +5,7 @@
 
 ---
 
-## 🌊 Overview & Context
+## Overview & Context
 
 **Veritas Blue** (developed by **Bat Bridge Partners**, Austin Cohort) is an interactive 3D presentation deck and Cisco consulting proposal built for **The Metals Company (TMC)** — a public deep-sea mining firm harvesting battery-metal nodules from the Pacific seafloor at 4,000 meters depth.
 
@@ -15,7 +15,7 @@ TMC faces a critical **proof and trust deficit**: environmental groups, regulato
 
 ---
 
-## 👥 Team & Mentors
+## Team & Mentors
 
 - **Program:** Cisco High School Externship (Austin Cohort)
 - **Team:** Bat Bridge Partners (6 Members)
@@ -24,7 +24,7 @@ TMC faces a critical **proof and trust deficit**: environmental groups, regulato
 
 ---
 
-## 🚀 Key Solution Pillars
+## Key Solution Pillars
 
 1. **Glass Ocean (Tamper-Proof Environmental Monitoring)**
    - Sensor data is signed and hash-chained directly into **Splunk** over a one-way physical network architecture.
@@ -40,7 +40,7 @@ TMC faces a critical **proof and trust deficit**: environmental groups, regulato
 
 ---
 
-## 💻 Tech Stack & Architecture
+## Tech Stack & Architecture
 
 - **Build System & Runtime:** Vite + Vanilla JavaScript (ES Modules)
 - **3D Graphics & Stage Engine:** Three.js + WebGL rendering engine driving an ambient deep-sea environment with procedural marine snow, caustics, and bubble particle bursts (`stage.js`, `bubbles.js`).
@@ -53,7 +53,7 @@ TMC faces a critical **proof and trust deficit**: environmental groups, regulato
 
 ---
 
-## ⌨️ Controls & Navigation
+## Controls & Navigation
 
 ### Presentation Keys
 | Key | Action |
@@ -68,7 +68,7 @@ TMC faces a critical **proof and trust deficit**: environmental groups, regulato
 
 ---
 
-## 🎯 Show Sequence (21 Cues)
+## Show Sequence (21 Cues)
 
 1. **Title** (`page-01`)
 2. **Team** (`page-02`)
@@ -94,7 +94,7 @@ TMC faces a critical **proof and trust deficit**: environmental groups, regulato
 
 ---
 
-## ⚙️ Development & Deployment
+## Development & Deployment
 
 ```bash
 # Navigate to the web app directory
