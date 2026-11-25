@@ -1,19 +1,15 @@
 # Veritas Blue — Project Glass Ocean
-### Cisco High School Externship Capstone Pitch (Austin Cohort)
+**An interactive 3D pitch deck built for the Cisco High School Externship in Austin.**
 
-[![Cisco Externship](https://img.shields.io/badge/Cisco-Externship_2026-049FD9?style=for-the-badge&logo=cisco&logoColor=white)](https://cisco-extern-veritas-blue.vercel.app)
+Veritas Blue is Bat Bridge Partners’ capstone proposal for verifying environmental monitoring in deep-sea mining. The browser presentation uses a 21-cue deck and three interactive simulations to explain the proposal, covering signed sensor records, selective harvesting, and zero-trust architecture.
 
----
+[Open the interactive presentation](https://yajatp.github.io/cisco-extern-veritas-blue/) · [Read the original slide deck](cisco%20slideshow.pdf) · [Run locally](#development--deployment)
 
-## Overview & Context
+![Opening slide of the Veritas Blue presentation](glass-ocean/public/slides/page-01.png)
 
-**Veritas Blue** (developed by **Bat Bridge Partners**, Austin Cohort) is an interactive 3D presentation deck and Cisco consulting proposal built for **The Metals Company (TMC)** — a public deep-sea mining firm harvesting battery-metal nodules from the Pacific seafloor at 4,000 meters depth.
+## Overview
 
-TMC faces a critical **proof and trust deficit**: environmental groups, regulators, and investors publicly distrust their ecological impact claims. Our proposal turns security into the core product: **verified environmental truth makes deep-sea mining licensable, insurable, and fundable.**
-
-> *"Give the machines eyes. Give the ocean a voice. Lock both behind doors nobody can pick."*
-
----
+The team used The Metals Company as the proposed client. The capstone explores how signed telemetry and independent monitoring could help stakeholders evaluate environmental claims. The website delivers the pitch and simulations. The monitoring, vehicle, and security systems are proposed designs.
 
 ## Team & Mentors
 
@@ -101,7 +97,7 @@ TMC faces a critical **proof and trust deficit**: environmental groups, regulato
 cd glass-ocean
 
 # Install dependencies
-npm install
+npm ci
 
 # Launch development server
 npm run dev
@@ -110,4 +106,4 @@ npm run dev
 npm run build
 ```
 
-Deployed live at [https://cisco-extern-veritas-blue.vercel.app](https://cisco-extern-veritas-blue.vercel.app).
+The [public presentation](https://yajatp.github.io/cisco-extern-veritas-blue/) is built from the same Vite project with GitHub Pages.
